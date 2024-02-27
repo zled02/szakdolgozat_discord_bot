@@ -42,11 +42,11 @@ def get_responses (user_input: str) -> str:
    
    
    if '/pc1080mid' in lowered:
-      return'Királyság4'
+      return'-Processzor: Intel core i7-12700H vagy AMD Ryzen 5 5600H\n-Videókártya: Nvidia RTX 3070/3070 Ti/3080\n-Memória 16/32 GB DDR5 4800 MHz\n-Tárhely: 1 TB\n-Kijelző: tetszőleges képfrissítés ajánlom a magasabb pl.: 120Hz vagy a 144Hz-et\nPéldáúl:\n -A Razer Blade\n -A HP Victus 16 laptopja\n -Lenovo Legion laptopok\n -Asus TUF Dash 15 laptopja\n -MSI Stealth 15M laptopja'
    if '/pc1440mid' in lowered:
-      return'Királyság5'
+      return'-Processzor: Intel core i9-14900HX vagy AMD Ryzen 9 7945HX\n-Videókártya: Nvidia RTX 4070/4080/4090\n-Memória 16/32 GB DDR5 4800 MHz\n-Tárhely: 1 TB\n-Kijelző: tetszőleges képfrissítés ajánlom a magasabb pl.: 120Hz vagy a 144Hz-et\nPéldáúl:\n -A Razer Blade\n -Az Alienware x15 \n -Lenovo Legion laptopok\n -Az ASUS ROG Strix Scar laptopok\n -MSI GE76 Raider laptopja'
    if '/pc4mid' in lowered:
-      return'Királyság6'
+      return'-Processzor: Intel core i9-14900HX vagy AMD Ryzen 9 7945HX\n-Videókártya: Nvidia RTX 4080/4090\n-Memória 32 GB DDR5 4800 MHz\n-Tárhely: 1 TB\n-Kijelző: tetszőleges képfrissítés ajánlom a magasabb pl.: 120Hz vagy a 144Hz-et\nPéldáúl:\n -A Razer Blade\n -Az Alienware x15 \n -Lenovo Legion laptopok\n -Az ASUS ROG Strix Scar laptopok\n -MSI GE76 Raider laptopja'
 
 
    #asztali pc felbontás választás
