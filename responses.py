@@ -8,11 +8,24 @@ def get_responses (user_input: str) -> str:
       return 'Szia ha szeretnéd elkezdeni a gamer Pc-d kiválasztását akkor a !kezdjunk parancs segítségevel elkezdheted a konfigurációt.'
    
    if '!kezdjunk' in lowered:
-      return 'Elősször az alábbi lehetőségek közül válassz!\n -Laptopot szeretnék: !laptop\n -Asztali számítógépet szeretnék: !asztali\nVagy ha ár sávok alapján szeretnél választani akkor a !arak'
+      return 'Elősször az alábbi lehetőségek közül válassz!\n -Laptopot szeretnék: !laptop\n -Asztali számítógépet szeretnék: !asztali\n -Vagy ha ár sávok alapján szeretnél választani akkor a !arak'
 
 
    if '!arak' in lowered:
-      return''
+      return'-Ha olcsó belépő szintű asztali gépet szeretnél (200-300 ezer Ft értékben) akkor használd az !alapgep parancsot.\n-Ha egy közép kategóriás gépre lenne szükséged (300-600 Ft értékben) akkor használd a !kozepgep parancsot.\n-Ha viszont a csúcs kategóriára fájna a fogad ("600-csillagos ég") akkor kérlek használd a !fullgep parancsot.'
+
+
+
+   if '!alapgep' in lowered:
+      return'Szuper a belépő kategóriád választottad így olcsón megismerheted a Gaming világát.\n-Fontos hogy ezek a gépek 1080p alacsony vagy közepes beállításokra képesek csak a megterhelőbb játékok esetén, de élvezhető fps számot tudnak nyújtani.\n -Első konfiguráció:\n -Processzor: Intel Core i5 11400F vagy AMD Ryzen 5 5600G\n -Videókártya: Nvidia RTX 3050\n -Alaplap: H510 Chipset az Intel esetében az AMD esetében pedig A520 Chipset\n -Memória: 16 GB DDR4\n -Háttértároló: 500 GB/1 TB SSD\n -Egy 500W-600W-os tápegység\n -Jól szellőző ház ami a keretbe még belefér\n -Ennek az ára nagyjából 220-240 ezer forint között van.\n pl.: -http://www.computerimperium.hu/images/Imperium_Core_i5_Gamer_RTX_PC_07.jpg\n -http://www.computerimperium.hu/images/Imperium_Ryzen_5_Premium_RTX_PC_07.jpg\n -Második konfiguráció:\n -Processzor: Intel Core i5 12400F vagy AMD Ryzen 5 5600G\n -Videóártya: Nvidia RTX 4060\n -Alaplap: Intel esetében a H610 Chipset vagy AMD esetében aaz A520 Chipset\n -Memória: 16 GB DDR4\n -Háttértároló: 1 TB SSD\n -Egy 500-600w-os tápegység\n-Jól szellőző ház ami a keretbe még belefér\n Ennek az ára 280-300 ezer forint között van.\n -pl.: http://www.computerimperium.hu/images/Imperium_Ryzen_5_Ultra_RTX_PC_05.jpg\n http://www.computerimperium.hu/images/Imperium_Core_i5_Premium_RTX_PC_07.jpg\nHasznos oldal lehet még számodra a következő FPS kalkulátor weboldal:\n https://pc-builds.com/fps-calculator/'
+
+   if '!kozepgep' in lowered:
+      return'Tökéletes választás a közép kategóriát választottad ezzel minden játékot el fogod tudni futtatni akár 1440p ben is.\n -Itt több féle opció lehetséges, mind processzorból, mind videókártyából, csak a pénztárca szabhat határt.\n -Processzorok: Intel Core i5 13400F/14400F Intel Core i7 14700k Vagy AMD Ryzen 7 5800X/7700X Ryzen 5 7600\n -Videókártya: Nvidia RTX 4060/4060 Ti/4070\n -Alaplap: Intel esetében B760 Chipset, AMD esetében pedig B650 Chipset\n -Memória: 32 GB DDR4 vagy DDR5 memória\n -Háttértároló: 1 TB SSD\n -Tápegység pedig legyen jó minőségü 80+gold vagy felette, 650W-750W között\n -Ami elengedhetetlen egy jól szellőző ház, hogy minden hűvös maradjon.\n -A gépek árai nagyjából 330-600 ezer forint között vannak konfigurációtol függően.\n -pl.: -http://www.computerimperium.hu/images/Imperium_Ryzen_7_Ultra_RTX_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_Ryzen_5_Titan_PRO_RTX_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_Ryzen_7_Titan_PRO_RTX_PC_07.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i7_Ultra_RTX_PC_08.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i5_Premium_PRO_RTX_PC_07.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i5_HD_RTX_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i5_Ultra_Pro_RTX_PC_02.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i5_ProArt_Ultra_RTX_PC_04.jpg'
+   
+   if '!fullgep' in lowered:
+      return'Úgylátom egy igazi Gamer vagy a legerősebb konfigurációk küzöl szeretnél választani, így lehetőséged lesz futtatni az összes játékot akár 4k-ban is magas FPS számmal.\n-Itt több féle opció lehetséges, mind processzorból, mind videókártyából, csak a pénztárca szabhat határt.\n -Processzorok: Intel Core i7-14700k, i9-14900k vagy AMD Ryzen 7 7800X3D Ryzen 9 7900X3D\n -Videókártya: Nvidia RTX 4070 SUPER/4070 Ti SUPER/4080 SUPER/4090\n -Alaplap: Intel esetében B760 vagy Z790 Chipset, AMD esetében pedig B650 vagy X670 Chipset.\n -Memória: 32 GB/64 GB DDR5 memőria\n -Háttértároló: 2 TB SSD\n -Tápegység egy jó minőségü 80+gold vagy felette, 850W-1000W minnel erőseb videókártyát választasz annál nagyobb.\n -Ami elengedhetetlen egy jól szellőző ház, hogy minden hűvös maradjon.\n -A gépek árai mint mondtam 600 ezertől-a csillagos ég.\n -pl.: http://www.computerimperium.hu/images/Imperium_Core_i7_Ultra_PRO_RTX_PC_04.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i9_SUPER_PRO_RTX_PC_06.jpg\n -http://www.computerimperium.hu/images/Imperium_Core_i9_ROG_Ultra_RTX_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_MAXIMUS_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_Ryzen_7_3D_SUPER_RTX_PC_05.jpg\n -http://www.computerimperium.hu/images/Imperium_RYZEN-7_3D_SUPER_Performance_RTX_PC_07.jpg\n -http://www.computerimperium.hu/images/Imperium_RYZEN-9_3D_SUPER_PRO_RTX_PC_07.jpg\n -http://www.computerimperium.hu/images/Imperium_Ryzen_9_ROG_Ultra_RTX_PC_06.jpg'
+   
+
 
 
    #laptop felbontás választása
@@ -54,11 +67,11 @@ def get_responses (user_input: str) -> str:
    
 
    #mindekttő laptop ajánlások
-   if '/pc1080mid' in lowered:
+   if '/lp1080mid' in lowered:
       return'-Processzor: Intel core i7-13700HX vagy AMD Ryzen 5 7535HS\n-Videókártya: Nvidia RTX 4070//4080\n-Memória 16/32 GB DDR5\n-Tárhely: 1 TB\n-Kijelző: tetszőleges képfrissítés ajánlom a magasabb pl.: 120Hz, 144Hz, 240Hz-et\nPéldáúl:\n -Az ASUS Tuf Gaming laptopok\n https://www.asus.com/hu/laptops/for-gaming/all-series/filter?Series=TUF-Gaming\n -Lenovo Legion 5 laptopok\n https://www.lenovo.com/hu/hu/laptops/legion-laptops/legion-5-series/c/legion-5-series\nHasznos oldal lehet még számodra a következő FPS kalkulátor weboldal:\n https://pc-builds.com/fps-calculator/'
-   if '/pc1440mid' in lowered:
+   if '/lp1440mid' in lowered:
       return'-Processzor: Intel core i9-14900HX vagy AMD Ryzen 9 7945HX\n-Videókártya: Nvidia RTX 4070/4080 vagy ezek Ti változatai\n-Memória 32 GB DDR5\n-Tárhely: 1 TB\n-Kijelző: tetszőleges képfrissítés ajánlom a magasabb pl.: 120Hz vagy a 144Hz-et\nPéldáúl:\n -Az Alienware x15 \n -Lenovo Legion pro 7 laptopok\n https://www.lenovo.com/hu/hu/laptops/legion-laptops/legion-pro-series/Legion-Pro-7i-Gen-8-16-inch-Intel/p/LEN101G0023\n -Az ASUS TUF Gaming A15\n https://www.asus.com/hu/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15-2024/\n -ASUS ROG Zephyrus G16\n https://rog.asus.com/hu/laptops/rog-zephyrus/rog-zephyrus-g16-2024/\nHasznos oldal lehet még számodra a következő FPS kalkulátor weboldal:\n https://pc-builds.com/fps-calculator/'
-   if '/pc4mid' in lowered:
+   if '/lp4mid' in lowered:
       return'A Gaming laptopok között a 4K kijelző elég ritka ezért nem sok opció közül választhatunk.\n-Processzor: Az Intel Core i9 modellt érdemes választani vagy az AMD Ryzen 9-es modellt\n-Videókártya: Mindenképpen az Nvidia RTX 4080/4090 es modellek et érdemes választani\n-Memória: elengedhetetlen ilyen felbontás mellé a 32 GB DDR5\n-Kijelző: Érdemes magas képfrissítést választani pl.: 120Hz, 144Hz, 240Hz-et\n például:\n -MSI Raider GE68\n https://hu.msi.com/Laptop/Raider-GE68-HX-14VX\n -Acer Predator Helios 15\n https://www.acer.com/hu-hu/predator/laptops/helios/helios-3d-15-spatiallabs-edition\n -ASUS ROG Zephyrus G16\n https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g16-2024/'
    ########################
 
