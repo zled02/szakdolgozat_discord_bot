@@ -15,9 +15,16 @@ start_process() {
 }
 
 # Fő ciklus
+trap 'kill -TERM $PID' SIGINT  # Leállítás a Ctrl+C esetén
+
 while true; do
     if ! is_process_running; then
         start_process
     fi
-    sleep 300  # 5 perc várakozás
+
+    # Eltároljuk a folyamat PID-ját
+    PID=$(pgrep -o -f "$process_name")
+
+    # Várunk, amíg a folyamat befejeződik vagy 30 másodperc eltelik
+    timeout 30s wait $PID
 done
