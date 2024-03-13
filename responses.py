@@ -5,7 +5,7 @@ def get_responses (user_input: str) -> str:
 
    
    if 'szia' in lowered or 'hello' in lowered:
-      return 'Szia ha szeretnéd elkezdeni a gamer Pc-d kiválasztását akkor a !kezdjunk parancs segítségevel elkezdheted a konfigurációt.'
+      return 'Szia ha szeretnéd elkezdeni a gamer Pc-d kiválasztását akkor a !kezdjunk parancs segítségevel elkezdheted a konfigurációt.\nHa privát chaten beszélgetnél velem amit jobban ajánlok, kérlek első parancsod beírásokkor kezd ?-el pl.: (?!kezdjunk) és azonnal válaszolok neked.'
    
    if '!kezdjunk' in lowered:
       return 'Elősször az alábbi lehetőségek közül válassz!\n -Laptopot szeretnék: !laptop\n -Asztali számítógépet szeretnék: !asztali\n -Vagy ha ár sávok alapján szeretnél választani akkor a !arak'
