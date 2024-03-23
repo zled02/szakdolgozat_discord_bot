@@ -135,4 +135,4 @@ def get_responses (user_input: str) -> str:
    #######################
 
    else:
-      return'Szia ezt a parancsot nem értem kérlek használd !kezdjunk parancsot. :)'
+      return'Szia ezt a parancsot nem értem kérlek használd !kezdjunk parancsot.'
